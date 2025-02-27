@@ -1,0 +1,11 @@
+<% if (typeof errors !== 'undefined' && errors.length > 0) { %> <%
+errors.forEach(error => { %>
+<div class="alert alert-danger alert-dismissible" role="alert">
+  <%= error.msg %>
+</div>
+<% }) %> <% } %> <% if (typeof success !== 'undefined' && success.length > 0) {
+%> <% success.forEach(succes => { %>
+<div class="alert alert-success alert-dismissible" role="alert">
+  <%= succes.msg %>
+</div>
+<% }) %> <% } %>
